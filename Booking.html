@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Leletu's Hair Salon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Inter', sans-serif; line-height: 1.6; color: #333;">
+
+    <!-- Navigation - Exact same as homepage -->
+    <nav style="position: fixed; top: 0; left: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; padding: 15px 0; box-shadow: 0 2px 20px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+            <div style="font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 600; color: #2c3e50;">
+                Leletu's Hair Salon
+            </div>
+            <div style="display: flex; gap: 30px; align-items: center;">
+                <a href="index.html" style="color: #2c3e50; text-decoration: none; font-weight: 500; transition: color 0.3s; position: relative;">Home</a>
+                <a href="About.html" style="color: #2c3e50; text-decoration: none; font-weight: 500; transition: color 0.3s;">About</a>
+                <a href="Services.html" style="color: #2c3e50; text-decoration: none; font-weight: 500; transition: color 0.3s;">Services</a>
+                <a href="Styles.html" style="color: #2c3e50; text-decoration: none; font-weight: 500; transition: color 0.3s;">Styles</a>
+                <a href="Pricing.html" style="color: #2c3e50; text-decoration: none; font-weight: 500; transition: color 0.3s;">Pricing</a>
+                <a href="Contact.html" style="color: #2c3e50; text-decoration: none; font-weight: 500; transition: color 0.3s;">Contact</a>
+                <a href="Booking.html" style="background: linear-gradient(135deg, #c9a96e, #b8956a); color: white; padding: 12px 24px; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s; box-shadow: 0 4px 15px rgba(201, 169, 110, 0.3);">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="padding: 120px 20px 80px; background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.8)), url('images/salon.jpg'); background-size: cover; background-position: center; text-align: center; color: white;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="margin-bottom: 20px;">
+                <span style="display: inline-block; background: rgba(255, 255, 255, 0.1); padding: 8px 20px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; letter-spacing: 1px; backdrop-filter: blur(10px);">
+                    BOOK YOUR VISIT
+                </span>
+            </div>
+            <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                Book Your Appointment
+            </h1>
+            <p style="font-size: 1.3rem; opacity: 0.9; font-weight: 300;">
+                Schedule your visit to Leletu's Hair Salon today and transform your look
+            </p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section style="padding: 100px 20px; background: white;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            
+            <!-- Booking Form -->
+            <div style="background: #f8f9fa; border-radius: 25px; padding: 60px 50px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #2c3e50; margin-bottom: 15px; font-weight: 600;">
+                        Schedule Your Appointment
+                    </h2>
+                    <p style="font-size: 1.1rem; color: #6c757d;">
+                        Fill out the form below and we'll contact you within 24 hours to confirm your booking.
+                    </p>
+                </div>
+
+                <form id="bookingForm" method="post" style="display: grid; gap: 30px;">
+                    
+                    <!-- Personal Information -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                        <div>
+                            <label for="firstName" style="display: block; font-size: 16px; color: #2c3e50; font-weight: 600; margin-bottom: 10px;">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required style="width: 100%; padding: 18px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 16px; transition: all 0.3s; box-sizing: border-box; background: white;">
+                        </div>
+                        <div>
+                            <label for="lastName" style="display: block; font-size: 16px; color: #2c3e50; font-weight: 600; margin-bottom: 10px;">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required style="width: 100%; padding: 18px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 16px; transition: all 0.3s; box-sizing: border-box; background: white;">
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                        <div>
+                            <label for="email" style="display: block; font-size: 16px; color: #2c3e50; font-weight: 600; margin-bottom: 10px;">Email Address *</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 18px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 16px; transition: all 0.3s; box-sizing: border-box; background: white;">
+                        </div>
+                        <div>
+                            <label for="phone" style="display: block; font-size: 16px; color: #2c3e50; font-weight: 600; margin-bottom: 10px;">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 18px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 16px; transition: all 0.3s; box-sizing: border-box; background: white;">
+                        </div>
+                    </div>
+
+                    <!-- Appointment Details -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                        <div>
+                            <label for="date" style="display: block; font-size: 16px; color: #2c3e50; font-weight: 600; margin-bottom: 10px;">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required style="width: 100%; padding: 18px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 16px; transition: all 0.3s; box-sizing: border-box; background: white;">
+                        </div>
+                        <div>
+                            <label for="time" style="display: block; font-size: 16px; color: #2c3e50; font-weight: 600; margin-bottom: 10px;">Preferred Time *</label>
+                            <select id="time" name="time" required style="width: 100%; padding: 18px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 16px; transition: all 0.3s; box-sizing: border-box; background: white;">
+                                <option value="">Select time...</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Service Selection -->
+                    <div>
+                        <label for="service" style="display: block; font-size: 16px; color: #2c3e50; font-weight: 600; margin-bottom: 10px;">Select Service *</label>
+                        <select id="service" name="service" required style="width: 100%; padding: 18px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 16px; transition: all 0.3s; box-sizing: border-box; background: white;">
+                            <option value="">Choose a service...</option>
+                            <optgroup label="Hair Services">
+                                <option value="hair-cut-style">Hair Cut & Style (R150-R250)</option>
+                                <option value="hair-coloring">Hair Coloring (R200-R400)</option>
+                                <option value="hair-treatment">Hair Treatment (R180-R300)</option>
+                                <option value="perming">Perming (R250-R350)</option>
+                            </optgroup>
+                            <optgroup label="Braiding Services">
+                                <option value="cornrows">Cornrows (R300-R450)</option>
+                                <option value="twist-braids">Twist Braids (R450-R600)</option>
+                                <option value="large-knotless">Large Knotless Braids (R650-R800)</option>
+                                <option value="medium-knotless">Medium Knotless Braids (R750)</option>
+                                <option value="small-knotless">Small Knotless Braids (R850-R1000)</option>
+                                <option value="box-braids">Knotless Box Braids (R800)</option>
+                            </optgroup>
+                            <optgroup label="Beauty Services">
+                                <option value="manicure">Manicure (R120-R200)</option>
+                                <option value="pedicure">Pedicure (R150-R250)</option>
+                                <option value="nail-art">Nail Art (R50-R150)</option>
+                                <option value="makeup">Makeup Application (R200-R400)</option>
+                            </optgroup>
+                            <optgroup label="Packages">
+                                <option value="basic-package">Basic Package (R300)</option>
+                                <option value="standard-package">Standard Package (R650)</option>
+                                <option value="premium-package">Premium Package (R930)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div>
+                        <label for="message" style="display: block; font-size: 16px; color: #2c3e50; font-weight: 600; margin-bottom: 10px;">Additional Information</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your preferred style, any special requests, hair length, color preferences, or questions you may have..." style="width: 100%; padding: 18px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 16px; resize: vertical; transition: all 0.3s; box-sizing: border-box; font-family: inherit; background: white;"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" style="width: 100%; font-size: 18px; padding: 22px; background: linear-gradient(135deg, #c9a96e, #b8956a); color: #fff; border: none; border-radius: 15px; cursor: pointer; font-weight: 700; transition: all 0.3s; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 8px 25px rgba(201, 169, 110, 0.4); display: flex; align-items: center; justify-content: center; gap: 12px;">
+                        <i class="fas fa-calendar-check"></i>
+                        Book Your Appointment
+                    </button>
+                    
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="successMessage" style="display: none; margin-top: 30px; padding: 30px; background: linear-gradient(135deg, #d4edda, #c3e6cb); border: 2px solid #28a745; border-radius: 15px; color: #155724; text-align: center; box-shadow: 0 10px 30px rgba(40, 167, 69, 0.2);">
+                        <div style="margin-bottom: 15px;">
+                            <i class="fas fa-check-circle" style="font-size: 3rem; color: #28a745;"></i>
+                        </div>
+                        <h3 style="margin: 0 0 15px 0; color: #155724; font-family: 'Playfair Display', serif; font-size: 1.8rem;">✅ Booking Successful!</h3>
+                        <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">Thank you! Your appointment request has been submitted successfully. We will contact you within 24 hours to confirm your booking and discuss any specific requirements.</p>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- Contact Info -->
+            <div style="margin-top: 60px; text-align: center; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #2c3e50; margin-bottom: 20px; font-weight: 600;">
+                    Need Help with Your Booking?
+                </h3>
+                <p style="color: #6c757d; margin-bottom: 25px; font-size: 1.1rem;">
+                    Our friendly team is here to assist you with any questions or special requests.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-phone" style="color: #c9a96e; font-size: 1.2rem;"></i>
+                        <span style="color: #2c3e50; font-weight: 600; font-size: 1.1rem;">073107161</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-envelope" style="color: #c9a96e; font-size: 1.2rem;"></i>
+                        <a href="mailto:leletussalon31@gmail.com" style="color: #2c3e50; text-decoration: none; font-weight: 600; font-size: 1.1rem;">leletussalon31@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JavaScript for Form Handling -->
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+            
+            // Get form data
+            const formData = new FormData(this);
+            const firstName = formData.get('firstName');
+            const lastName = formData.get('lastName');
+            const service = formData.get('service');
+            const date = formData.get('date');
+            const time = formData.get('time');
+            
+            // Hide the form with smooth transition
+            this.style.transition = 'opacity 0.5s ease';
+            this.style.opacity = '0';
+            
+            setTimeout(() => {
+                this.style.display = 'none';
+                
+                // Show success message
+                const successMessage = document.getElementById('successMessage');
+                successMessage.style.display = 'block';
+                successMessage.style.opacity = '0';
+                successMessage.style.transition = 'opacity 0.5s ease';
+                
+                setTimeout(() => {
+                    successMessage.style.opacity = '1';
+                }, 100);
+                
+                // Scroll to success message
+                successMessage.scrollIntoView({ behavior: 'smooth' });
+            }, 500);
+            
+            // Reset and show form again after 8 seconds
+            setTimeout(function() {
+                const successMessage = document.getElementById('successMessage');
+                const form = document.getElementById('bookingForm');
+                
+                successMessage.style.opacity = '0';
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                    form.style.display = 'grid';
+                    form.style.opacity = '1';
+                    form.reset();
+                    
+                    // Scroll back to form
+                    form.scrollIntoView({ behavior: 'smooth' });
+                }, 500);
+            }, 8000);
+        });
+
+        // Add focus effects to form inputs
+        const inputs = document.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.style.borderColor = '#c9a96e';
+                this.style.boxShadow = '0 0 0 3px rgba(201, 169, 110, 0.2)';
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.style.borderColor = '#e0e0e0';
+                this.style.boxShadow = 'none';
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Set minimum date to today
+        document.getElementById('date').min = new Date().toISOString().split('T')[0];
+        
+        // Set maximum date to 3 months from today
+        const maxDate = new Date();
+        maxDate.setMonth(maxDate.getMonth() + 3);
+        document.getElementById('date').max = maxDate.toISOString().split('T')[0];
+    </script>
+
+    <style>
+        a:hover {
+            transform: translateY(-2px);
+        }
+        
+        [style*="box-shadow"]:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+        }
+        
+        nav a:hover {
+            color: #c9a96e !important;
+        }
+        
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #c9a96e;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(201, 169, 110, 0.5) !important;
+        }
+        
+        @media (max-width: 768px) {
+            nav div:last-child {
+                display: none;
+            }
+            
+            [style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+            
+            [style*="padding: 60px 50px"] {
+                padding: 40px 30px !important;
+            }
+        }
+    </style>
+
+</body>
+</html>
